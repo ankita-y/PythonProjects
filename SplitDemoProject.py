@@ -9,4 +9,5 @@ for line in fh:
             lst2.append(word)
 
 lst2.sort()
+print("String after split up")
 print(lst2)
