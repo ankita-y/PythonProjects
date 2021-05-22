@@ -1,0 +1,26 @@
+from datetime import datetime
+data = [
+     {
+          "name":"Reena",
+          "Date":"2019-05-27"
+     },
+     {
+          "name":"Geeta",
+          "Date":"2019-05-06"
+     },
+     {
+          "name":"Preeti",
+          "Date":"2019-06-27"
+     },
+     {
+          "name":"Mohan",
+          "Date":"null"
+     }
+]
+
+
+temp = sorted(
+     data,
+     key = lambda x: (x["Date"] == "null",x["Date"] == "",x["Date"])
+)
+print(temp)
